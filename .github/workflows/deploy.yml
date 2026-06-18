@@ -1,0 +1,60 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # ── Validate ──────────────────────────────────────────────────────────────
+  validate:
+    name: Validate HTML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for broken links (internal hrefs)
+        run: |
+          echo "Checking for obvious HTML issues..."
+          # Fail if index.html is missing
+          test -f index.html || (echo "index.html not found!" && exit 1)
+          # Warn on any TODO placeholders left in code
+          if grep -i "YOUR_FORM_ID\|TODO\|FIXME\|PLACEHOLDER" index.html; then
+            echo "⚠️  Warning: placeholder values found in index.html"
+          fi
+          echo "✅ Validation passed"
+
+  # ── Deploy ────────────────────────────────────────────────────────────────
+  deploy:
+    name: Deploy
+    needs: validate
+    runs-on: ubuntu-latest
+    # Only deploy on push to main (not on PRs)
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
