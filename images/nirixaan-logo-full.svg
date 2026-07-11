@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" width="240" height="48" fill="none">
+  
+  <rect width="240" height="48" rx="5" fill="#0a0f1a"/>
+
+  
+  <g transform="translate(4, 4) scale(0.625)">
+    
+    <polygon points="32,5 56,19 56,45 32,59 8,45 8,19"
+      stroke="#6366f1" stroke-width="2.2" fill="none" opacity="0.95"/>
+    
+    <polygon points="32,11 51,22 51,42 32,53 13,42 13,22"
+      stroke="#6366f1" stroke-width="1.1" fill="none" opacity="0.3"/>
+    
+    <polygon points="32,32 51,22 45,28" fill="#6366f1" opacity="0.55"/>
+    <polygon points="32,32 56,32 50,37" fill="#6366f1" opacity="0.45"/>
+    <polygon points="32,32 51,42 45,36" fill="#6366f1" opacity="0.55"/>
+    <polygon points="32,32 13,42 19,36" fill="#6366f1" opacity="0.55"/>
+    <polygon points="32,32 8,32 14,27" fill="#6366f1" opacity="0.45"/>
+    <polygon points="32,32 13,22 19,28" fill="#6366f1" opacity="0.55"/>
+    
+    <circle cx="32" cy="32" r="11" fill="#0a0f1a" stroke="#6366f1" stroke-width="2"/>
+    <circle cx="32" cy="32" r="6" fill="none" stroke="#6366f1" stroke-width="1" opacity="0.45"/>
+    
+    <circle cx="32" cy="32" r="3.5" fill="#6366f1"/>
+    
+    <line x1="8" y1="32" x2="21" y2="32" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+    <line x1="43" y1="32" x2="56" y2="32" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+    <line x1="21" y1="32" x2="43" y2="32" stroke="#f59e0b" stroke-width="0.9" stroke-dasharray="2,2.5" opacity="0.55"/>
+    
+    <path d="M8 26 L8 19 L14 19" stroke="#f59e0b" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M56 26 L56 19 L50 19" stroke="#f59e0b" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8 38 L8 45 L14 45" stroke="#f59e0b" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M56 38 L56 45 L50 45" stroke="#f59e0b" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <circle cx="43" cy="32" r="2" fill="#f59e0b"/>
+    <circle cx="21" cy="32" r="2" fill="#f59e0b"/>
+  </g>
+
+  
+  <line x1="50" y1="11" x2="50" y2="37" stroke="#6366f1" stroke-width="0.7" opacity="0.35"/>
+
+  
+  
+  <text
+    x="58"
+    y="29"
+    font-family="'Inter', 'DM Sans', 'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="16"
+    font-weight="700"
+    letter-spacing="2.5"
+    fill="#f0f0f8"
+    dominant-baseline="auto"
+  >NIRIXAAN</text>
+
+  
+  <line x1="58" y1="32.5" x2="84" y2="32.5" stroke="#6366f1" stroke-width="1" opacity="0.55"/>
+
+  
+  <text
+    x="59"
+    y="40"
+    font-family="'Inter', 'DM Sans', 'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="5.5"
+    font-weight="400"
+    letter-spacing="2.8"
+    fill="#6366f1"
+    opacity="0.8"
+  >VISUAL INTELLIGENCE</text>
+
+  
+  <circle cx="220" cy="29" r="1.8" fill="#f59e0b" opacity="0.9"/>
+</svg>
