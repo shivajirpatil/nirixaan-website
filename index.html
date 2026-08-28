@@ -790,6 +790,34 @@
       .use-case-grid { grid-template-columns: 1fr 1fr; }
     }
 
+    .labs-service {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: var(--space-8);
+      align-items: center;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: clamp(var(--space-6), 4vw, var(--space-10));
+      margin-top: var(--space-8);
+    }
+    .labs-service__title {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: var(--space-3) 0 var(--space-3);
+    }
+    .labs-service__desc {
+      font-size: var(--text-base);
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: 40rem;
+    }
+    @media (max-width: 700px) {
+      .labs-service { grid-template-columns: 1fr; }
+    }
+
     /* Product pipeline diagram */
     .pipeline-diagram {
       display: flex;
@@ -1678,6 +1706,21 @@
 
   <div class="section-divider"></div>
 
+  <section class="products" id="skillbridge" aria-labelledby="skillbridge-heading">
+    <div class="container">
+      <div class="labs-service reveal">
+        <div>
+          <span class="product-badge">Private beta · Labs service</span>
+          <h2 class="labs-service__title" id="skillbridge-heading">SkillBridge</h2>
+          <p class="labs-service__desc">Upload a resume, paste a job description, get an honest gap report and a plan sized to the hours you actually have. Google sign-in for invited testers.</p>
+        </div>
+        <a href="https://skillbridge.nirixaanlabs.com" class="btn btn--primary btn--lg">Open SkillBridge →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
   <!-- ═══════════════════════════════════════════════════════════════
        SERVICES
   ═══════════════════════════════════════════════════════════════ -->
@@ -2007,6 +2050,7 @@
           <div class="footer__col-title">Products</div>
           <ul class="footer__links" role="list">
             <li><a href="#products" class="footer__link">Vision Processing Engine</a></li>
+            <li><a href="https://skillbridge.nirixaanlabs.com" class="footer__link">SkillBridge</a></li>
             <li><a href="#products" class="footer__link">Tower Inspection</a></li>
             <li><a href="#products" class="footer__link">Dashcam Portal</a></li>
             <li><a href="#products" class="footer__link">Agri QC</a></li>
