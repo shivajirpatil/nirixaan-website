@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sovereign Factory Console · Nirixaan Labs</title>
+  <meta name="description" content="Interactive demo of Nirixaan Kavach, the Bharat Model Router, and the Nirman and Sanchalan factories. Sample data only." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="../images/nirixaan-logo-icon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="app.css?v=1" />
+</head>
+<body>
+  <div class="app">
+    <aside class="side" aria-label="Console navigation">
+      <a class="brand" href="../"><img src="../images/nirixaan-logo-icon.svg" alt="" /><div><b>Nirixaan Labs</b><span>Sovereign Factory Console</span></div></a>
+      <nav id="nav"></nav>
+      <div class="side-foot">
+        <div class="sov-pill">● Data, models and logs in India</div>
+        <div>Runs fully in your browser. Works offline.</div>
+      </div>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <button class="btn btn-sm menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+        <div class="org"><b>Demo State e-Governance Society</b><span>Signed in as A. Kulkarni, CISO (sample user)</span></div>
+        <span class="demo-badge">Demo · sample data</span>
+        <span class="spacer"></span>
+        <button class="btn btn-sm" id="tourBtn">Guided demo</button>
+        <button class="btn btn-sm hide-sm" id="resetBtn">Reset</button>
+        <button class="btn btn-sm" id="themeBtn" aria-label="Toggle theme">◐</button>
+      </header>
+      <main class="page" id="page"></main>
+    </div>
+  </div>
+  <script src="data.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
